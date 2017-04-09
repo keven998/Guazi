@@ -6,6 +6,7 @@ import random
 from datetime import datetime
 from multiprocessing import Pool
 
+
 proxyHost = "proxy.abuyun.com"
 proxyPort = "9010"
 # 代理隧道验证信息,个人信息，不公开了
@@ -47,7 +48,6 @@ class Guazi():
                    "Upgrade-Insecure-Requests": "1",
                    "User-Agent": random.choice(user_agent_list) }
         return headers
-
 
     def get_car_info(self,detail_url,num_retries=1):
         # time.sleep(1.5+random.random())
