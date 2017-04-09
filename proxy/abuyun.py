@@ -1,3 +1,5 @@
+# 代理ip的测试
+
 import requests,time
 from multiprocessing import Pool
 from datetime import datetime
@@ -10,9 +12,9 @@ targetUrl = "https://www.guazi.com/baotou/16851176b3aabf9dx.htm"
 proxyHost = "proxy.abuyun.com"
 proxyPort = "9010"
 
-# 代理隧道验证信息
-proxyUser = "H751819F41A8T64D"
-proxyPass = "868FD8389E4711CD"
+# 代理隧道验证信息，个人代理隧道，不公开了
+proxyUser = "H751819F41A8****"
+proxyPass = "868FD8389E47****"
 
 proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
     "host": proxyHost,
