@@ -1,7 +1,12 @@
+#获取所有各个品牌下车的链接
+#之前的思路，后来发现这样琵琶曲策略复杂化了，还是直接从主页全抓
+
 import requests
 from bs4 import BeautifulSoup
 
 main_url="http://www.guazi.com/www/buy/"
+
+
 def get_brand_urls(main_url):
     webdata=requests.get(main_url)
     soup=BeautifulSoup(webdata.text,'lxml')
